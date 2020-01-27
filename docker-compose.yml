@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  backend:
+    working_dir: /usr/app
+    build: .
+    command: npm run dev
+    ports:
+      - 4000:4000
+    volumes:
+      - ./:/usr/app/

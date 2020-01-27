@@ -1,0 +1,25 @@
+{
+  "name": "hairkut-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --legacy-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeancarlos-cpu/hairkut-api.git"
+  },
+  "author": "Jean Carlos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeancarlos-cpu/hairkut-api/issues"
+  },
+  "homepage": "https://github.com/jeancarlos-cpu/hairkut-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
