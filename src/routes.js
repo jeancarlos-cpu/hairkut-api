@@ -9,5 +9,6 @@ routes.post("/sessions", session.store);
 
 routes.use(auth);
 routes.get("/users", user.index);
+routes.put("/users", user.update);
 
 module.exports = routes;
