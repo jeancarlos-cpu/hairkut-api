@@ -3,6 +3,8 @@ const multer = require("multer");
 const user = require("./controllers/user");
 const provider = require("./controllers/provider");
 const session = require("./controllers/session");
+const appointment = require("./controllers/appointment");
+const schedule = require("./controllers/schedule");
 const file = require("./controllers/file");
 const auth = require("./middlewares/auth");
 const multerConfig = require("./config/multer");
@@ -22,5 +24,10 @@ routes.get("/users", user.index);
 routes.put("/users", user.update);
 
 routes.get("/providers", provider.index);
+
+routes.get("/appointments", appointment.index);
+routes.post("/appointments", appointment.store);
+
+routes.post("/schedule", schedule.index);
 
 module.exports = routes;
